@@ -56,14 +56,9 @@ When running the installer script in Fedora 24 or later, you need to install 'gl
 ### GNOME Shell
 
 #### Abrus
-![01](https://github.com/vinceliuice/Abrus-gtk-theme/blob/imgs/Azure.jpg?raw=true) 
-![03](https://github.com/vinceliuice/Abrus-gtk-theme/blob/imgs/img-01.jpg?raw=true) 
-![04](https://github.com/vinceliuice/Abrus-gtk-theme/blob/imgs/img-02.jpg?raw=true) 
-![05](https://github.com/vinceliuice/Abrus-gtk-theme/blob/imgs/img-03.jpg?raw=true) 
-
-#### Abrus-light
-![01](https://github.com/vinceliuice/Abrus-gtk-theme/blob/imgs/Azure-light.jpg?raw=true) 
-
-#### Abrus-dark
-![02](https://github.com/vinceliuice/Abrus-gtk-theme/blob/imgs/Azure-light.jpg?raw=true) 
+![01](https://github.com/vinceliuice/Abrus-gtk-theme/blob/imgs/screenshot1.png?raw=true) 
+![02](https://github.com/vinceliuice/Abrus-gtk-theme/blob/imgs/screenshot2.png?raw=true) 
+![03](https://github.com/vinceliuice/Abrus-gtk-theme/blob/imgs/screenshot3.png?raw=true) 
+![04](https://github.com/vinceliuice/Abrus-gtk-theme/blob/imgs/img1.jpeg?raw=true) 
+![05](https://github.com/vinceliuice/Abrus-gtk-theme/blob/imgs/img2.jpeg?raw=true)
 
