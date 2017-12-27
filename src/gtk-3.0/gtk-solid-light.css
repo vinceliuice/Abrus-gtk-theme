@@ -3342,6 +3342,77 @@ configurationview entry.flat {
 configurationview list {
   border-width: 0; }
 
+headerbar > button.flat.popup.title-menu-button.toggle, headerbar > button.popup.title-menu-button.toggle.sidebar-button {
+  border-radius: 2px;
+  -gtk-outline-radius: 2px; }
+  headerbar > button.flat.popup.title-menu-button.toggle > grid .title, headerbar > button.popup.title-menu-button.toggle.sidebar-button > grid .title {
+    margin: rem(-2.7px) 0;
+    padding: rem(1.3px) rem(13.3px) 0;
+    font-size: 90%; }
+  headerbar > button.flat.popup.title-menu-button.toggle > grid .subtitle, headerbar > button.popup.title-menu-button.toggle.sidebar-button > grid .subtitle {
+    margin: rem(-2.7px) 0;
+    padding: 0 rem(13.3px) rem(1.3px);
+    font-size: 80%; }
+
+window.background > box.vertical box.horizontal list.categories {
+  background-color: #F5F6F7;
+  border: none;
+  color: #191B1F; }
+  window.background > box.vertical box.horizontal list.categories row.activatable.category {
+    color: #191B1F;
+    background-color: transparent;
+    font-weight: 500; }
+    window.background > box.vertical box.horizontal list.categories row.activatable.category:hover {
+      color: #191B1F; }
+    window.background > box.vertical box.horizontal list.categories row.activatable.category:selected {
+      color: #ffffff;
+      background-color: #B82525; }
+      window.background > box.vertical box.horizontal list.categories row.activatable.category:selected label {
+        color: #ffffff; }
+    window.background > box.vertical box.horizontal list.categories row.activatable.category > label {
+      padding-left: 0;
+      padding-right: 0; }
+window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list > separator {
+  background-color: transparent; }
+  window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list > separator.compressed-rows-group-separator {
+    background-image: image(#d9dde0); }
+window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable {
+  color: #191B1F;
+  transition-duration: 0.1s; }
+  window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable:hover, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable:active {
+    color: #191B1F; }
+  window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable label.compressed-entries-label {
+    background-image: image(#3484e2);
+    color: #ffffff;
+    font-weight: 700; }
+  window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable.compressed-row {
+    background-image: image(#edeef0);
+    color: black;
+    transition-property: opacity, border-image, background-image, box-shadow; }
+    window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable.compressed-row:hover {
+      background-image: image(#eaebec);
+      color: #191B1F; }
+    window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable.compressed-row:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable.compressed-row:active:focus {
+      background-image: image(#dfe0e1);
+      color: #191B1F;
+      animation: none; }
+    window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable.compressed-row.popover-activated-row {
+      background-image: image(#B82525);
+      color: #ffffff; }
+    window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable.compressed-row-header {
+      background-image: image(#ffffff);
+      color: #B82525; }
+      window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable.compressed-row-header:hover {
+        background-image: image(#fbf4f4); }
+      window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable.compressed-row-header:active, window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable.compressed-row-header:active:focus {
+        background-image: image(#f8e9e9);
+        color: #B82525;
+        animation: none; }
+      window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable.compressed-row-header label.compressed-entries-label {
+        background-image: image(#B82525);
+        color: #ffffff;
+        transition-duration: 0s; }
+
 .documents-scrolledwin.frame {
   border-width: 0; }
 

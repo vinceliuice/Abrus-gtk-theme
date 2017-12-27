@@ -59,6 +59,7 @@ for trans in '' '-solid' ; do
 			dash \
 			dash-placeholder.svg \
 			noise-texture.svg \
+			noise.png \
 			process-working.svg \
 			window-close.svg \
 			window-close-active.svg \
@@ -177,12 +178,12 @@ for trans in '' '-solid' ; do
 	cd ${srcdir}/xfwm4
 
 	cp -ur \
-		themerc${color} \
-		${themedir}/xfwm4/themerc
+		assets${color}/*.png \
+		${themedir}/xfwm4
 
 	cp -ur \
-		assets${color} \
-		${themedir}/xfwm4/assets
+		themerc${color} \
+		${themedir}/xfwm4/themerc
 
   done
 done

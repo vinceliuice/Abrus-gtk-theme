@@ -1,4 +1,4 @@
-<img src="https://github.com/vinceliuice/Abrus-gtk-theme/blob/imgs/logo.png" alt="Logo" align="right" /> Azure Gtk Theme
+<img src="https://github.com/vinceliuice/Abrus-gtk-theme/blob/imgs/logo.png" alt="Logo" align="right" /> Abrus Gtk Theme
 ======
 
 Abrus is a stylish Design theme for GTK 3, GTK 2 and Gnome-Shell which supports GTK 3 and GTK 2 based desktop environments like Gnome, Pantheon, XFCE, Mate, etc.
