@@ -486,7 +486,11 @@ window.background > box.vertical box.horizontal {
       color: $fg_color;
       background-color: transparent;
       font-weight: 500;
-      &:hover { color: $fg_color; }
+      &:hover {
+          color: $fg_color;
+          background-color: rgba($fg_color, 0.08);
+        }
+
       &:selected {
         color: $selected_fg_color;
         background-color: $selected_bg_color;

@@ -3363,7 +3363,8 @@ window.background > box.vertical box.horizontal list.categories {
     background-color: transparent;
     font-weight: 500; }
     window.background > box.vertical box.horizontal list.categories row.activatable.category:hover {
-      color: #191B1F; }
+      color: #191B1F;
+      background-color: rgba(25, 27, 31, 0.08); }
     window.background > box.vertical box.horizontal list.categories row.activatable.category:selected {
       color: #ffffff;
       background-color: #B82525; }
