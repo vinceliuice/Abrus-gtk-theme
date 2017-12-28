@@ -1010,7 +1010,7 @@ headerbar entry, .nemo-window .primary-toolbar entry {
   headerbar entry:focus, .nemo-window .primary-toolbar entry:focus {
     color: #FFFFFF;
     border-color: #B82525;
-    background-color: rgba(65, 65, 71, 0.4);
+    background-color: rgba(60, 60, 66, 0.4);
     background-clip: padding-box; }
     headerbar entry:focus image, .nemo-window .primary-toolbar entry:focus image {
       color: #B82525; }
@@ -1298,7 +1298,7 @@ headerbar combobox > .linked > button.combo, .nemo-window .primary-toolbar combo
   headerbar combobox > .linked > button.combo:hover, .nemo-window .primary-toolbar combobox > .linked > button.combo:hover {
     color: #FFFFFF;
     border-color: #B82525;
-    background-color: rgba(65, 65, 71, 0.4);
+    background-color: rgba(60, 60, 66, 0.4);
     box-shadow: none; }
   headerbar combobox > .linked > button.combo:disabled, .nemo-window .primary-toolbar combobox > .linked > button.combo:disabled {
     color: rgba(255, 255, 255, 0.55);
@@ -2815,10 +2815,10 @@ decoration {
       border-radius: 0; }
   .csd.popup decoration {
     border-radius: 2px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15); }
   tooltip.csd decoration {
     border-radius: 2px;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15); }
   messagedialog.csd decoration {
     border-radius: 3px; }
   .solid-csd decoration {
@@ -3596,7 +3596,7 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   .marlin-pathbar.pathbar:focus {
     color: #FFFFFF;
     border-color: #B82525;
-    background-color: rgba(65, 65, 71, 0.4); }
+    background-color: rgba(60, 60, 66, 0.4); }
   .marlin-pathbar.pathbar:disabled {
     color: rgba(255, 255, 255, 0.55);
     border-color: rgba(2, 2, 2, 0.4);

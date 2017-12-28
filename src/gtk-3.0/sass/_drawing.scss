@@ -82,7 +82,7 @@
   //
     color: $header_fg;
     border-color: if($variant=='light', $selected_bg_color, transparent);
-    background-color: if($darker=='false', darken($header_entry_bg, 5%), darken($header_entry_bg, 8%));
+    background-color: if($darker=='false', darken($header_entry_bg, 2%), darken($header_entry_bg, 10%));
   }
 
   @if $t==header-insensitive {

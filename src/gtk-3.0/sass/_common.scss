@@ -3169,11 +3169,11 @@ decoration {
   }
   .csd.popup & {
     border-radius: 2px;
-    box-shadow: 0 3px 6px if($variant == 'light', $_wm_border, transparentize($_wm_border, 0.1));
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
   }
   tooltip.csd & {
     border-radius: 2px;
-    box-shadow: 0 1px 3px 0 if($variant == 'light', $_wm_border, transparentize($_wm_border, 0.3));
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
   }
   messagedialog.csd & {
     border-radius: 3px;
