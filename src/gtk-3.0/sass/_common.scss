@@ -992,11 +992,11 @@ headerbar,
 %titlebar {
 
   min-height: 42px;
-  padding: 0 10px 2px 10px;
-
-  border-width: 0 0 2px 0;
-  border-style: solid;
-  border-image: if($darker=='false' and $variant=='light', linear-gradient(90deg, #ff9595 5%, #ff1e1e 50%, #ff9595 95%) 2 2, linear-gradient(90deg, #670404 5%, #B82525 50%, #670404 95%) 2 2);
+  padding: if($darker=='false' and $variant=='light', 0 10px 0 10px, 0 10px 2px 10px);
+  border-bottom: if($darker=='false' and $variant=='light', 1px solid $header_border, solid);
+  border-image: if($darker=='false' and $variant=='light', none,
+                linear-gradient(90deg, #670404 5%, #B82525 50%, #670404 95%)
+                0 0 2 0/0 0 2px 0);
 
   color: $header_fg;
 
@@ -1004,7 +1004,7 @@ headerbar,
   background-repeat: repeat;
   background-color: opacify($header_bg, 1);
 
-  box-shadow: inset 0 1px lighten($header_bg, 5%), 0 -2px 3px rgba(0, 0, 0, 0.23);
+  box-shadow: inset 0 1px lighten($header_bg, 5%), 0 -2px 3px rgba(0, 0, 0, 0.15);
 
   .csd & {  // Transparent header-bars only in csd windows
     background-color: $header_bg;
@@ -1014,7 +1014,7 @@ headerbar,
     transition: $backdrop_transition;
     color: transparentize($header_fg, 0.3);
     background-color: opacify($header_bg_backdrop, 1);
-    box-shadow: inset 0 1px lighten($header_bg, 5%), 0 -1px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0 1px lighten($header_bg, 5%), 0 -1px 2px rgba(0, 0, 0, 0.1);
     .csd & { background-color: $header_bg_backdrop; }
   }
 
@@ -1682,21 +1682,22 @@ menu,
   }
   // overflow buttons
   > arrow {
-    @include button(undecorated);
+//    @include button(undecorated);
     min-width: 16px;
     min-height: 16px;
     padding: 4px;
     background-color: $_menu_bg;
     border-radius: 0;
+    border: 1px solid $borders_color;
 
     &.top {
-      margin-top: -6px;
-      border-bottom: 1px solid mix($fg_color, $base_color, 10%);
+      margin-top: -12px;
+//      border-bottom: 1px solid $borders_color;
       -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
     }
     &.bottom {
-      margin-bottom: -6px;
-      border-top: 1px solid mix($fg_color, $base_color, 10%);
+      margin-bottom: -12px;
+//      border-top: 1px solid $borders_color;
       -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
     }
     &:hover { background-color: mix($fg_color, $base_color, 10%); }
@@ -1761,11 +1762,6 @@ popover.background {
   &.menu button,
   button.model {
 
-    &:hover {
-      background-color: darken($_popover_bg, 10%);
-      color: $text_color;
-    }
-
     &:checked {
       background-color: $selected_bg_color;
       color: $selected_fg_color;
@@ -1802,72 +1798,41 @@ notebook {
   }
 
   > header {
-    padding: 5px;
+    padding: 2px;
     background-color: $bg_color;
 
     &.top {
-      border-bottom: 1px solid $borders_color;
+      border-bottom: 1px solid $selected_bg_color;
       > tabs {
-        margin-bottom: 0;
         > tab {
-
-          &:hover {
-              background-color: $bg_color;
-              box-shadow: inset 0 -1px gtkalpha($selected_bg_color, 0.6),
-                          0 1px gtkalpha($selected_bg_color, 0.6);
-            }
-
-          &:checked { background-color: $bg_color; box-shadow: inset 0 -1px $selected_bg_color, 0 1px $selected_bg_color; }
+          margin: 4px 8px 0 8px;
         }
       }
     }
 
     &.bottom {
-      border-top: 1px solid $borders_color;
+      border-top: 1px solid $selected_bg_color;
       > tabs {
-        margin-top: 0;
         > tab {
-
-          &:hover {
-              background-color: $bg_color;
-              box-shadow: inset 0 1px gtkalpha($selected_bg_color, 0.6),
-                          0 -1px gtkalpha($selected_bg_color, 0.6); }
-
-          &:checked { background-color: $bg_color; box-shadow: inset 0 1px $selected_bg_color, 0 -1px $selected_bg_color; }
+          margin: 0 8px 4px 8px;
         }
       }
     }
 
     &.left {
-      border-right: 1px solid $borders_color;
+      border-right: 1px solid $selected_bg_color;
       > tabs {
-        margin-right: 0;
         > tab {
-
-          &:hover {
-              background-color: $bg_color;
-              box-shadow: inset -1px 0 gtkalpha($selected_bg_color, 0.6),
-                          1px 0 gtkalpha($selected_bg_color, 0.6);
-            }
-
-          &:checked { background-color: $bg_color; box-shadow: inset -1px 0 $selected_bg_color, 1px 0 $selected_bg_color; }
+          margin: 8px 0 8px 4px;
         }
       }
     }
 
     &.right {
-      border-left: 1px solid $borders_color;
+      border-left: 1px solid $selected_bg_color;
       > tabs {
-        margin-left: 0;
         > tab {
-
-          &:hover {
-              background-color: $bg_color;
-              box-shadow: inset 1px 0 gtkalpha($selected_bg_color, 0.6),
-                          -1px 0 gtkalpha($selected_bg_color, 0.6);
-            }
-
-          &:checked { background-color: $bg_color; box-shadow: inset 1px 0 $selected_bg_color, -1px 0 $selected_bg_color; }
+          margin: 8px 4px 8px 0;
          }
        }
      }
@@ -1878,13 +1843,12 @@ notebook {
         padding-#{$_bpos}: 0;
 
         > tabs > tab {
-          padding: 3px 10px 8px 10px;
-          min-width: 20px;
-          min-height: 20px;
+          padding: 3px 10px 4px 10px;
+          min-width: 16px;
+          min-height: 16px;
 
           outline-offset: -4px;
 
-          border: none;
           border-#{$_bpos}: none;
 
           // tab overlap
@@ -1931,14 +1895,16 @@ notebook {
     }
 
     > tabs > tab {
-      color: $insensitive_fg_color;
-      background-color: transparentize($bg_color, 1);
-
+      color: mix($fg_color, $insensitive_fg_color, 85%);
+      background-color: if($variant=='light', darken($bg_color, 0%), lighten($bg_color, 4%));
+      border: if($variant=='light', 1px solid $borders_color, none);
       &:hover:not(:checked) {
-        color: mix($fg_color, $insensitive_fg_color, 50%);
+        color: mix($fg_color, $insensitive_fg_color, 85%);
+        background-color: if($variant=='light', darken($bg_color, 5%), lighten($bg_color, 8%));
       }
       &:checked {
-        color: $fg_color;
+        color: $selected_fg_color;
+        background-color: $selected_bg_color;
       }
 
       // close button
@@ -1947,17 +1913,17 @@ notebook {
         min-height: 16px;
         min-width: 22px;
         padding: 0;
-        color: mix($bg_color, $fg_color, 35%);
+        color: if($variant=='light', gtkalpha(black, 0.35), gtkalpha(white, 0.6));
 
         &:hover {
           @extend %undecorated_button;
-          color: lighten(red, 15%);
-          background-color: darken($bg_color, 5%);
+          color: $selected_fg_color;
+          background-color: lighten($selected_bg_color, 18%);
         }
         &:active, &:active:hover {
           @extend %undecorated_button;
-          color: $selected_bg_color;
-          background-color: darken($bg_color, 8%);
+          color: $selected_fg_color;
+          background-color: lighten($selected_bg_color, 12%);
         }
       }
     }
@@ -2590,13 +2556,13 @@ row {
 //
 .app-notification {
   padding: 10px;
-  color: $dark_sidebar_fg;
-  background-color: $dark_sidebar_bg;
+  color: $osd_fg_color;
+  background-color: gtkalpha($osd_bg_color, 0.9);
   background-clip: border-box;
   border-radius: 0 0 2px 2px;
   border-width: 0 1px 1px 1px;
   border-style: solid;
-  border-color: darken($dark_sidebar_bg, 10%);
+  border-color: $osd_button_border;
 
   border { border: none; }
 
@@ -3174,7 +3140,7 @@ decoration {
 
   $_wm_border: if($variant=='light', transparentize(black, 0.9), transparentize(black, 0.8));
 
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 8px 3px rgba(0, 0, 0, 0.22), 0 16px 16px transparent;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 8px 3px rgba(0, 0, 0, 0.15), 0 16px 16px transparent;
 
   // this is used for the resize cursor area
   margin: 8px;
@@ -3182,7 +3148,7 @@ decoration {
   &:backdrop {
     // the transparent shadow here is to enforce that the shadow extents don't
     // change when we go to backdrop, to prevent jumping windows
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23), 0 16px 16px transparent;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 3px 3px rgba(0, 0, 0, 0.16), 0 16px 16px transparent;
     transition: $backdrop_transition;
   }
   .fullscreen &,
