@@ -1933,7 +1933,7 @@ notebook {
 //
 // Scrollbars
 //
-$_scrollbar_bg_color: darken($base_color, 1%);
+$_scrollbar_bg_color: if($variant == 'light', darken($base_color, 1%), lighten($base_color, 1%));
 
 scrollbar {
   $_slider_min_length: 40px;

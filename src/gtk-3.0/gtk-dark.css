@@ -1745,7 +1745,7 @@ notebook {
           background-color: #d94141; }
 
 scrollbar {
-  background-color: #141619;
+  background-color: #181a1f;
   transition: 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   * {
     -GtkScrollbar-has-backward-stepper: false;
@@ -2386,7 +2386,7 @@ scrolledwindow undershoot.right {
 scrolledwindow junction {
   border-color: transparent;
   border-image: linear-gradient(to bottom, #24272d 1px, transparent 1px) 0 0 0 1/0 1px stretch;
-  background-color: #141619; }
+  background-color: #181a1f; }
   scrolledwindow junction:dir(rtl) {
     border-image-slice: 0 1 0 0; }
 
@@ -4292,7 +4292,7 @@ filechooser actionbar entry {
 
 filechooser placessidebar.sidebar scrollbar,
 .nautilus-window placessidebar.sidebar scrollbar, .nemo-window .sidebar scrollbar, .caja-side-pane scrollbar {
-  border-color: rgba(14, 15, 17, 0.95); }
+  border-color: #24272d; }
   filechooser placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider,
   .nautilus-window placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .nemo-window .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .caja-side-pane scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
     background-color: white;
@@ -4311,7 +4311,7 @@ filechooser placessidebar.sidebar scrollbar,
       background-color: transparent; }
   filechooser placessidebar.sidebar scrollbar trough,
   .nautilus-window placessidebar.sidebar scrollbar trough, .nemo-window .sidebar scrollbar trough, .caja-side-pane scrollbar trough {
-    background-color: rgba(14, 15, 17, 0.95); }
+    background-color: rgba(32, 34, 39, 0.95); }
 
 @define-color theme_fg_color #dedede;
 @define-color theme_text_color #dedede;
