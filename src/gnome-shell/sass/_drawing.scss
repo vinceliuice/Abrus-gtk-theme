@@ -116,6 +116,36 @@
   }
 }
 
+@mixin search_entry($t, $fc: $primary_color) {
+//
+// search_entry
+//
+// $t: search_entry type
+// $fc: focus color
+//
+
+  @if $t == normal {
+    background-color: rgba(white, 0.12);
+    border-radius: 50px;
+    border-color: transparent;
+    box-shadow: 0 0 1px 0 rgba(black, 0.5);
+  }
+
+  @if $t == focus {
+    border-color: transparent;
+    background-color: rgba(white, 0.18);
+    box-shadow: 0 1px 3px 0 rgba(black, 0.65);
+  }
+
+  @if $t == hover {
+    box-shadow: 0 2px 6px 0 rgba(black, 0.65);
+  }
+
+  @if $t == insensitive {
+    color: $disabled_fg_color;
+    box-shadow: none;
+  }
+}
 
 @mixin button($t, $c: $base_color, $tc: $fg_color) {
 //

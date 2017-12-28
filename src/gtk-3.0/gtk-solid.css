@@ -1639,23 +1639,23 @@ notebook {
     notebook > header.top {
       border-bottom: 1px solid #B82525; }
       notebook > header.top > tabs > tab {
-        margin: 4px 8px 0 8px; }
+        margin: 6px 4px 0 4px; }
     notebook > header.bottom {
       border-top: 1px solid #B82525; }
       notebook > header.bottom > tabs > tab {
-        margin: 0 8px 4px 8px; }
+        margin: 0 4px 6px 4px; }
     notebook > header.left {
       border-right: 1px solid #B82525; }
       notebook > header.left > tabs > tab {
-        margin: 8px 0 8px 4px; }
+        margin: 4px 0 4px 6px; }
     notebook > header.right {
       border-left: 1px solid #B82525; }
       notebook > header.right > tabs > tab {
-        margin: 8px 4px 8px 0; }
+        margin: 4px 6px 4px 0; }
     notebook > header.top {
       padding-bottom: 0; }
       notebook > header.top > tabs > tab {
-        padding: 3px 10px 4px 10px;
+        padding: 2px 12px 4px 12px;
         min-width: 16px;
         min-height: 16px;
         outline-offset: -4px;
@@ -1666,7 +1666,7 @@ notebook {
     notebook > header.bottom {
       padding-top: 0; }
       notebook > header.bottom > tabs > tab {
-        padding: 3px 10px 4px 10px;
+        padding: 2px 12px 4px 12px;
         min-width: 16px;
         min-height: 16px;
         outline-offset: -4px;
@@ -1677,7 +1677,7 @@ notebook {
     notebook > header.right {
       padding-left: 0; }
       notebook > header.right > tabs > tab {
-        padding: 3px 10px 4px 10px;
+        padding: 2px 12px 4px 12px;
         min-width: 16px;
         min-height: 16px;
         outline-offset: -4px;
@@ -1688,7 +1688,7 @@ notebook {
     notebook > header.left {
       padding-right: 0; }
       notebook > header.left > tabs > tab {
-        padding: 3px 10px 4px 10px;
+        padding: 2px 12px 4px 12px;
         min-width: 16px;
         min-height: 16px;
         outline-offset: -4px;

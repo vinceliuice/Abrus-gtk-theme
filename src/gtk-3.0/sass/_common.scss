@@ -1805,7 +1805,7 @@ notebook {
       border-bottom: 1px solid $selected_bg_color;
       > tabs {
         > tab {
-          margin: 4px 8px 0 8px;
+          margin: 6px 4px 0 4px;
         }
       }
     }
@@ -1814,7 +1814,7 @@ notebook {
       border-top: 1px solid $selected_bg_color;
       > tabs {
         > tab {
-          margin: 0 8px 4px 8px;
+          margin: 0 4px 6px 4px;
         }
       }
     }
@@ -1823,7 +1823,7 @@ notebook {
       border-right: 1px solid $selected_bg_color;
       > tabs {
         > tab {
-          margin: 8px 0 8px 4px;
+          margin: 4px 0 4px 6px;
         }
       }
     }
@@ -1832,7 +1832,7 @@ notebook {
       border-left: 1px solid $selected_bg_color;
       > tabs {
         > tab {
-          margin: 8px 4px 8px 0;
+          margin: 4px 6px 4px 0;
          }
        }
      }
@@ -1843,7 +1843,7 @@ notebook {
         padding-#{$_bpos}: 0;
 
         > tabs > tab {
-          padding: 3px 10px 4px 10px;
+          padding: 2px 12px 4px 12px;
           min-width: 16px;
           min-height: 16px;
 
