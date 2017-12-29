@@ -957,7 +957,7 @@ headerbar,
     min-height: 28px;
     padding: 0 0;
     background-color: #1f1f22;
-    border-bottom-width: 0;
+    border: none;
     box-shadow: none; }
     .maximized headerbar.default-decoration, .maximized .csd headerbar.default-decoration, .maximized headerbar.default-decoration:backdrop, .maximized .csd headerbar.default-decoration:backdrop, .maximized
     .default-decoration.titlebar:not(headerbar), .maximized .csd

@@ -47,9 +47,9 @@ $panel_bg_color:   if($panel =='dark', scale-alpha($black, 0.5), scale-alpha($bl
 
 // Misc colors
 
-$primary_color: #B82525;
-$alt_primary_color: #B82525;
-$accent_color: #B82525;
+$primary_color: if($variant == 'light', #C72E2E, #B82525);
+$alt_primary_color: if($variant == 'light', #C72E2E, #B82525);
+$accent_color: if($variant == 'light', #C72E2E, #B82525);
 
 $link_color:         $primary_color;
 $visited_link_color: $purple_A200;

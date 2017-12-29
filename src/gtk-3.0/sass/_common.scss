@@ -1076,7 +1076,7 @@ headerbar,
     min-height: 28px;
     padding: 0 0;
     background-color: opacify($header_bg, 1);
-    border-bottom-width: 0;
+    border: none;
     box-shadow: none;
     .maximized & { background-color: opacify($header_bg, 1); }
   }
