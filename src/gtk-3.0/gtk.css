@@ -1733,8 +1733,10 @@ notebook {
       notebook > header > tabs > tab button.flat, notebook > header > tabs > tab button.sidebar-button {
         border-radius: 100px;
         min-height: 16px;
-        min-width: 22px;
+        min-width: 24px;
         padding: 0;
+        margin-right: -6px;
+        margin-bottom: -2px;
         color: alpha(black,0.35); }
         notebook > header > tabs > tab button.flat:hover, notebook > header > tabs > tab button.sidebar-button:hover {
           color: #ffffff;

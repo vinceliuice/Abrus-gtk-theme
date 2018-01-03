@@ -1911,8 +1911,10 @@ notebook {
       button.flat {
         border-radius: 100px;
         min-height: 16px;
-        min-width: 22px;
+        min-width: 24px;
         padding: 0;
+        margin-right: -6px;
+        margin-bottom: -2px;
         color: if($variant=='light', gtkalpha(black, 0.35), gtkalpha(white, 0.6));
 
         &:hover {
