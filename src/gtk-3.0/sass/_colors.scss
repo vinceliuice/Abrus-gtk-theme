@@ -13,7 +13,7 @@ $selected_borders_color: darken($selected_bg_color, 20%);
 $borders_color: if($variant =='light', darken($bg_color, 10%), lighten($bg_color, 5%));
 
 $link_color: #3484e2;
-$link_visited_color: if($variant == 'light', lighten($text_color, 5%), darken($text_color, 8%));
+$link_visited_color: if($variant == 'light', lighten($text_color, 10%), darken($text_color, 15%));
 
 $selection_mode_bg: if($transparency == 'true', transparentize($selected_bg_color, 0.05), $selected_bg_color);
 $selection_mode_fg: $selected_fg_color;
