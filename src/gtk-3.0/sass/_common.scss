@@ -1798,7 +1798,7 @@ notebook {
   }
 
   > header {
-    padding: 2px;
+//    padding: 2px;
     background-color: $bg_color;
 
     &.top {
@@ -1841,7 +1841,7 @@ notebook {
       // sizing and borders
       &.#{$_pos} {
         padding-#{$_bpos}: 0;
-
+//        margin-#{$_pos}: 2px;
         > tabs > tab {
           padding: 2px 12px 4px 12px;
           min-width: 16px;
@@ -1905,6 +1905,7 @@ notebook {
       &:checked {
         color: $selected_fg_color;
         background-color: $selected_bg_color;
+        border: if($variant=='light', 1px solid $selected_bg_color, none);
       }
 
       // close button
@@ -3203,11 +3204,6 @@ headerbar,
   }
 
   button.titlebutton {
-    margin: 0;
-    padding: 0;
-    min-width: 22px;
-    min-height: 22px;
-
     @include button(undecorated);
     background-color: transparentize($header_bg, 1);
 
@@ -3218,6 +3214,10 @@ headerbar,
       @include button(header-active);
     }
     &.close, &.maximize, &.minimize, &.restore {
+      margin: 0;
+      padding: 0;
+      min-width: 22px;
+      min-height: 22px;
       color: transparent;
       background-color: transparent;
       background-position: center;

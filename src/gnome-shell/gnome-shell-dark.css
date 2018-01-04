@@ -1287,19 +1287,21 @@ StScrollBar {
 .search-entry {
   width: 304px;
   padding: 0 8px;
-  border-radius: 0;
+  border: none;
   color: rgba(255, 255, 255, 0.5);
   selection-background-color: rgba(255, 255, 255, 0.3);
   selected-color: rgba(255, 255, 255, 0.85);
   background-color: rgba(255, 255, 255, 0.12);
   border-radius: 50px;
-  border-color: transparent; }
+  border-color: transparent;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35); }
   .search-entry:focus {
     border-color: transparent;
     background-color: rgba(255, 255, 255, 0.18);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.55);
+    padding: 0 8px;
+    border: none;
     color: rgba(255, 255, 255, 0.85); }
-  .search-entry:hover {
-    background-color: rgba(255, 255, 255, 0.2); }
   .search-entry .search-entry-icon {
     icon-size: 16px;
     padding: 0 0;

@@ -1635,7 +1635,6 @@ notebook {
   notebook > stack:not(:only-child) {
     background-color: #16181C; }
   notebook > header {
-    padding: 2px;
     background-color: #191B1F; }
     notebook > header.top {
       border-bottom: 1px solid #B82525; }
@@ -1730,7 +1729,8 @@ notebook {
         background-color: #2b2f36; }
       notebook > header > tabs > tab:checked {
         color: #ffffff;
-        background-color: #B82525; }
+        background-color: #B82525;
+        border: none; }
       notebook > header > tabs > tab button.flat, notebook > header > tabs > tab button.sidebar-button {
         border-radius: 100px;
         min-height: 16px;
@@ -2839,10 +2839,6 @@ headerbar.default-decoration button.titlebutton,
   margin: 0; }
 headerbar button.titlebutton,
 .titlebar button.titlebutton {
-  margin: 0;
-  padding: 0;
-  min-width: 22px;
-  min-height: 22px;
   border-color: transparent;
   background-color: transparent;
   background-image: none;
@@ -2865,6 +2861,10 @@ headerbar button.titlebutton,
   .titlebar button.titlebutton.maximize,
   .titlebar button.titlebutton.minimize,
   .titlebar button.titlebutton.restore {
+    margin: 0;
+    padding: 0;
+    min-width: 22px;
+    min-height: 22px;
     color: transparent;
     background-color: transparent;
     background-position: center;
