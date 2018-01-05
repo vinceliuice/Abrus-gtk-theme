@@ -1255,7 +1255,7 @@ headerbar {
       @include button(header-hover);
 
       &:hover { background-color: lighten($header_button_bg, 15%); }
-      &:active, &:checked { @include button(header-active); border-color: $header_button_border; }
+      &:active, &:checked { @include button(header-active); }
       &:disabled { color: transparentize($header_fg, 0.4); }
       &:backdrop { opacity: 0.85; }
       &, &:hover, &:active, &:checked, &:disabled { @extend %linked; }
@@ -1741,32 +1741,9 @@ popover.background {
     &.osd { @extend %osd; }
   }
 
-   button:not(.suggested-action):not(.destructive-action)
-    {
-      &:hover {
-        background-color: if($variant=='light', transparentize(black, 0.93), transparentize(white, 0.85));
-        color: $text_color;
-    }
-
-      &:checked {
-        background-color: $selected_bg_color;
-        color: $selected_fg_color;
-    }
-
-      &:active {
-        background-color: $selected_bg_color;
-        color: $selected_fg_color;
-    }
-   }
-
   &.menu button,
   button.model {
-
-    &:checked {
-      background-color: $selected_bg_color;
-      color: $selected_fg_color;
-    }
-
+    &:checked,
     &:active {
       background-color: $selected_bg_color;
       color: $selected_fg_color;

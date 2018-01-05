@@ -1060,7 +1060,7 @@ headerbar button, .nemo-window .primary-toolbar button {
     background-color: rgba(67, 67, 74, 0.35); }
   headerbar button:active, .nemo-window .primary-toolbar button:active, headerbar button:checked, .nemo-window .primary-toolbar button:checked {
     color: #ffffff;
-    border-color: #C72E2E;
+    border-color: rgba(7, 7, 7, 0.35);
     background-color: #C72E2E;
     background-clip: padding-box; }
   headerbar button:disabled, .nemo-window .primary-toolbar button:disabled {
@@ -1111,9 +1111,8 @@ headerbar .linked:not(.vertical).path-bar > button,
   headerbar .linked:not(.vertical).path-bar > button:checked,
   .nemo-window .primary-toolbar .linked:not(.vertical).path-bar > button:checked {
     color: #ffffff;
-    border-color: #C72E2E;
-    background-color: #C72E2E;
-    border-color: rgba(7, 7, 7, 0.35); }
+    border-color: rgba(7, 7, 7, 0.35);
+    background-color: #C72E2E; }
   headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled, .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled,
   headerbar .linked:not(.vertical).path-bar > button:disabled,
   .nemo-window .primary-toolbar .linked:not(.vertical).path-bar > button:disabled {
@@ -1267,7 +1266,7 @@ headerbar spinbutton:not(.vertical) button:hover, .nemo-window .primary-toolbar 
   background-color: rgba(104, 104, 114, 0.35); }
 headerbar spinbutton:not(.vertical) button:active, .nemo-window .primary-toolbar spinbutton:not(.vertical) button:active, headerbar spinbutton:not(.vertical) button:checked, .nemo-window .primary-toolbar spinbutton:not(.vertical) button:checked {
   color: #ffffff;
-  border-color: #C72E2E;
+  border-color: rgba(7, 7, 7, 0.35);
   background-color: #C72E2E; }
 headerbar spinbutton:not(.vertical) button:disabled, .nemo-window .primary-toolbar spinbutton:not(.vertical) button:disabled {
   color: rgba(255, 255, 255, 0.6); }
@@ -1592,27 +1591,12 @@ popover.background {
   popover.background > .inline-toolbar {
     border-style: none;
     background-color: transparent; }
-  popover button:not(.suggested-action):not(.destructive-action):hover,
-  popover.background button:not(.suggested-action):not(.destructive-action):hover {
-    background-color: rgba(0, 0, 0, 0.07);
-    color: #363636; }
-  popover button:not(.suggested-action):not(.destructive-action):checked,
-  popover.background button:not(.suggested-action):not(.destructive-action):checked {
-    background-color: #C72E2E;
-    color: #ffffff; }
-  popover button:not(.suggested-action):not(.destructive-action):active,
-  popover.background button:not(.suggested-action):not(.destructive-action):active {
-    background-color: #C72E2E;
-    color: #ffffff; }
-  popover.menu button:checked,
+  popover.menu button:checked, popover.menu button:active,
   popover button.model:checked,
-  popover.background.menu button:checked,
-  popover.background button.model:checked {
-    background-color: #C72E2E;
-    color: #ffffff; }
-  popover.menu button:active,
   popover button.model:active,
+  popover.background.menu button:checked,
   popover.background.menu button:active,
+  popover.background button.model:checked,
   popover.background button.model:active {
     background-color: #C72E2E;
     color: #ffffff; }
@@ -2853,7 +2837,7 @@ headerbar button.titlebutton,
   .titlebar button.titlebutton:active,
   .titlebar button.titlebutton:checked {
     color: #ffffff;
-    border-color: #C72E2E;
+    border-color: rgba(7, 7, 7, 0.35);
     background-color: #C72E2E; }
   headerbar button.titlebutton.close, headerbar button.titlebutton.maximize, headerbar button.titlebutton.minimize, headerbar button.titlebutton.restore,
   .titlebar button.titlebutton.close,
@@ -3036,7 +3020,7 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
     background-color: rgba(67, 67, 74, 0.35); }
   100% {
     color: #ffffff;
-    border-color: #C72E2E;
+    border-color: rgba(7, 7, 7, 0.35);
     background-color: #C72E2E; } }
 .nautilus-operations-button-needs-attention {
   animation: needs_attention_keyframes 2s ease-in-out; }
