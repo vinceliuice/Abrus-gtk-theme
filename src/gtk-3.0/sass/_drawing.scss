@@ -147,7 +147,7 @@
   //
     color: darken($fg_color, 10%);
     border-color: if($variant=='light', darken($button_border, 5%), lighten($borders_color, 5%));
-    background-color: lighten($button_bg, 10%);
+    background-color: if($variant=='light', darken($button_bg, 3%), lighten($button_bg, 8%));
   }
 
   @else if $t==active {

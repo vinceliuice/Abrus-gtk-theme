@@ -263,7 +263,7 @@ button {
   button:hover {
     color: #020203;
     border-color: #bec8dd;
-    background-color: white;
+    background-color: #f2f3f5;
     -gtk-icon-effect: highlight; }
   button:active, button:checked {
     color: #ffffff;
@@ -474,7 +474,7 @@ button {
   .inline-toolbar toolbutton > button:hover {
     color: #020203;
     border-color: #bec8dd;
-    background-color: white; }
+    background-color: #f2f3f5; }
   .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
     color: #ffffff;
     border-color: #C72E2E;
@@ -2722,7 +2722,7 @@ colorswatch#add-color-button {
   colorswatch#add-color-button:hover {
     color: #020203;
     border-color: #bec8dd;
-    background-color: white; }
+    background-color: #f2f3f5; }
   colorswatch#add-color-button overlay {
     border-color: transparent;
     background-color: transparent;
@@ -2745,7 +2745,7 @@ colorchooser .popover.osd {
 .scale-popup button:hover {
   color: #020203;
   border-color: #bec8dd;
-  background-color: white; }
+  background-color: #f2f3f5; }
 
 .context-menu, popover.touch-selection, .csd popover.touch-selection,
 popover.background.touch-selection, .csd
@@ -3291,18 +3291,6 @@ configurationview entry.flat {
   background: none; }
 configurationview list {
   border-width: 0; }
-
-headerbar > button.flat.popup.title-menu-button.toggle, headerbar > button.popup.title-menu-button.toggle.sidebar-button {
-  border-radius: 2px;
-  -gtk-outline-radius: 2px; }
-  headerbar > button.flat.popup.title-menu-button.toggle > grid .title, headerbar > button.popup.title-menu-button.toggle.sidebar-button > grid .title {
-    margin: rem(-2.7px) 0;
-    padding: rem(1.3px) rem(13.3px) 0;
-    font-size: 90%; }
-  headerbar > button.flat.popup.title-menu-button.toggle > grid .subtitle, headerbar > button.popup.title-menu-button.toggle.sidebar-button > grid .subtitle {
-    margin: rem(-2.7px) 0;
-    padding: 0 rem(13.3px) rem(1.3px);
-    font-size: 80%; }
 
 window.background > box.vertical box.horizontal list.categories {
   background-color: #F5F6F7;
@@ -4002,7 +3990,7 @@ GtkListBox .h4 {
   #content_frame button:hover {
     color: #020203;
     border-color: #bec8dd;
-    background-color: white; }
+    background-color: #f2f3f5; }
   #content_frame button:active, #content_frame button:checked {
     color: #ffffff;
     border-color: #C72E2E;
