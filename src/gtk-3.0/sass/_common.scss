@@ -1165,8 +1165,8 @@ headerbar {
     &:disabled { @include entry(header-insensitive); }
 
     selection:focus {
-      background-color: $selected_fg_color;
-      color: $selected_bg_color;
+      background-color: $selected_bg_color;
+      color: $selected_fg_color;
     }
 
     progress {
@@ -2750,7 +2750,7 @@ placessidebar {
 
       &:not(:hover):not(:active) > image { opacity: 0.5 };
     }
-      
+
     &.sidebar-placeholder-row {
       padding: 0 8px;
       min-height: 2px;
@@ -3231,5 +3231,26 @@ headerbar,
     color: $selected_fg_color;
 
     &:disabled { color: mix($selected_fg_color, $selected_bg_color, 50%); }
+  }
+}
+
+/*********
+ * Emoji *
+ *********/
+popover.emoji-picker { }
+
+// mimic tab style
+button.emoji-section { }
+
+.emoji {
+  min-width: 3em;
+  min-height: 3em;
+  padding: 0;
+  // font-size: large;
+
+  widget {
+    transition: $button_transition;
+
+    &:hover { font-size: larger; }
   }
 }

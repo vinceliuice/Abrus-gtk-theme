@@ -435,9 +435,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="541.10579"
-     inkscape:cy="146.6938"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="-31.435835"
+     inkscape:cy="119.23284"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -487,8 +487,7 @@
      id="layer3"
      inkscape:label="superbackdrop"
      style="display:inline"
-     transform="translate(8.000005,285.63782)"
-     sodipodi:insensitive="true">
+     transform="translate(8.000005,285.63782)">
     <rect
        ry="0"
        rx="0"
@@ -4349,7 +4348,7 @@
          height="9.3023252"
          width="11.302325"
          id="rect1850"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#444444;stroke-width:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#444444;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <g
          id="g1921"
          transform="translate(23.343927,-8.1398623)">
@@ -4437,7 +4436,7 @@
        style="opacity:0.7"
        inkscape:label="#g2002">
       <rect
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#444444;stroke-width:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#444444;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect1996"
          width="11.302325"
          height="9.3023252"
@@ -4540,7 +4539,7 @@
          height="9.3023252"
          width="11.302325"
          id="rect2026"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#b82525;stroke-width:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#b82525;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <g
          id="g2030"
          transform="translate(23.343927,-8.1398623)">
@@ -4627,7 +4626,7 @@
        id="titlebutton-maximize-hover"
        inkscape:label="#g2092">
       <rect
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#b82525;stroke-width:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#b82525;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect2086"
          width="11.302325"
          height="9.3023252"
@@ -4720,7 +4719,7 @@
        transform="translate(244.80211,-113.72021)"
        id="titlebutton-maximize-dark">
       <rect
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect1667"
          width="11.302325"
          height="9.3023252"
@@ -4822,7 +4821,7 @@
          height="9.3023252"
          width="11.302325"
          id="rect1697"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <g
          id="g1701"
          transform="translate(23.343927,-8.1398623)">
@@ -4911,7 +4910,7 @@
        transform="translate(244.80211,-35.772921)"
        id="titlebutton-maximize-active-dark">
       <rect
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#b82525;stroke-width:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#b82525;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect1727"
          width="11.302325"
          height="9.3023252"
@@ -5012,7 +5011,7 @@
          height="9.3023252"
          width="11.302325"
          id="rect1757"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#b82525;stroke-width:1;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#b82525;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <g
          id="g1761"
          transform="translate(23.343927,-8.1398623)">

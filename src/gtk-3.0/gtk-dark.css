@@ -1020,8 +1020,8 @@ headerbar entry, .nemo-window .primary-toolbar entry {
     border-color: rgba(2, 2, 2, 0.35);
     background-color: rgba(85, 85, 93, 0.2); }
   headerbar entry selection:focus, .nemo-window .primary-toolbar entry selection:focus {
-    background-color: #ffffff;
-    color: #B82525; }
+    background-color: #B82525;
+    color: #ffffff; }
   headerbar entry progress, .nemo-window .primary-toolbar entry progress {
     border-color: #B82525;
     background-image: none;
@@ -1057,7 +1057,6 @@ headerbar button, .nemo-window .primary-toolbar button {
     color: rgba(225, 219, 219, 0.8);
     border-color: rgba(7, 7, 7, 0.35);
     background-image: -gtk-scaled(url("assets/noise-texture.png"));
-    background-repeat: repeat;
     background-color: rgba(67, 67, 74, 0.35); }
   headerbar button:active, .nemo-window .primary-toolbar button:active, headerbar button:checked, .nemo-window .primary-toolbar button:checked {
     color: #ffffff;
@@ -1100,7 +1099,6 @@ headerbar .linked:not(.vertical).path-bar > button,
   color: rgba(225, 219, 219, 0.8);
   border-color: rgba(7, 7, 7, 0.35);
   background-image: -gtk-scaled(url("assets/noise-texture.png"));
-  background-repeat: repeat;
   background-color: rgba(67, 67, 74, 0.35); }
   headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, .nemo-window .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover,
   headerbar .linked:not(.vertical).path-bar > button:hover,
@@ -1261,7 +1259,6 @@ headerbar spinbutton:not(.vertical) button, .nemo-window .primary-toolbar spinbu
   color: rgba(225, 219, 219, 0.8);
   border-color: rgba(7, 7, 7, 0.35);
   background-image: -gtk-scaled(url("assets/noise-texture.png"));
-  background-repeat: repeat;
   background-color: rgba(67, 67, 74, 0.35); }
 headerbar spinbutton:not(.vertical) button:hover, .nemo-window .primary-toolbar spinbutton:not(.vertical) button:hover {
   background-color: rgba(104, 104, 114, 0.35); }
@@ -2832,7 +2829,6 @@ headerbar button.titlebutton,
     color: rgba(225, 219, 219, 0.8);
     border-color: rgba(7, 7, 7, 0.35);
     background-image: -gtk-scaled(url("assets/noise-texture.png"));
-    background-repeat: repeat;
     background-color: rgba(67, 67, 74, 0.35); }
   headerbar button.titlebutton:active, headerbar button.titlebutton:checked,
   .titlebar button.titlebutton:active,
@@ -2950,6 +2946,18 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     modelbutton.flat:selected arrow:disabled, treeview.view:disabled:selected:focus, row:disabled:selected, calendar:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected {
       color: #dc9292; }
 
+/*********
+ * Emoji *
+ *********/
+.emoji {
+  min-width: 3em;
+  min-height: 3em;
+  padding: 0; }
+  .emoji widget {
+    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .emoji widget:hover {
+      font-size: larger; }
+
 /*
 .gedit-bottom-panel-paned notebook,
 terminal-window notebook {
@@ -3017,7 +3025,6 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
     color: rgba(225, 219, 219, 0.8);
     border-color: rgba(7, 7, 7, 0.35);
     background-image: -gtk-scaled(url("assets/noise-texture.png"));
-    background-repeat: repeat;
     background-color: rgba(67, 67, 74, 0.35); }
   100% {
     color: #ffffff;
@@ -3639,18 +3646,18 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
 /****************
  * Libre-Office *
  ****************/
-window.background > grid.horizontal > grid.horizontal {
+window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal {
   background-color: rgba(31, 31, 34, 0.95); }
-  window.background > grid.horizontal > grid.horizontal > button.flat.small-button, window.background > grid.horizontal > grid.horizontal > button.small-button.sidebar-button {
+  window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button {
     color: rgba(225, 219, 219, 0.8);
     border: none; }
-    window.background > grid.horizontal > grid.horizontal > button.flat.small-button:hover, window.background > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:hover {
+    window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button:hover, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:hover {
       background-color: rgba(67, 67, 74, 0.95);
       color: rgba(237, 233, 233, 0.8); }
-    window.background > grid.horizontal > grid.horizontal > button.flat.small-button:active, window.background > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:active, window.background > grid.horizontal > grid.horizontal > button.flat.small-button:checked, window.background > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:checked {
+    window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button:active, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:active, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button:checked, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:checked {
       background-color: #B82525;
       color: rgba(255, 255, 255, 0.8); }
-    window.background > grid.horizontal > grid.horizontal > button.flat.small-button:disabled, window.background > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:disabled {
+    window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button:disabled, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:disabled {
       color: alpha(rgba(225, 219, 219, 0.8),0.6); }
 
 window.background:not(.solid-csd) > notebook:not(.frame) {
