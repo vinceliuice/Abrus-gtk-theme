@@ -3462,6 +3462,30 @@ gf-candidate-box:hover, gf-candidate-box:selected {
   background-color: #C72E2E;
   border-radius: 2px; }
 
+/****************
+ * Libre-Office *
+ ****************/
+window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal {
+  background-color: rgba(31, 31, 34, 0.95); }
+  window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button {
+    color: #FFFFFF;
+    border: none; }
+    window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button:hover, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:hover {
+      background-color: rgba(67, 67, 74, 0.95);
+      color: white; }
+    window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button:active, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:active, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button:checked, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:checked {
+      background-color: #C72E2E;
+      color: white; }
+    window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button:disabled, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:disabled {
+      color: alpha(#FFFFFF,0.6); }
+
+window.background:not(.solid-csd) > notebook:not(.frame) {
+  border: 0 none transparent;
+  background-color: #ffffff; }
+  window.background:not(.solid-csd) > notebook:not(.frame) > stack {
+    border: none;
+    box-shadow: none; }
+
 MsdOsdWindow.background.osd {
   border-radius: 2px;
   border: 1px solid rgba(206, 206, 206, 0.95); }
@@ -3641,30 +3665,6 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
 .panel .menu .spinner,
 .menu .spinner {
   opacity: 1; }
-
-/****************
- * Libre-Office *
- ****************/
-window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal {
-  background-color: rgba(31, 31, 34, 0.95); }
-  window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button {
-    color: #FFFFFF;
-    border: none; }
-    window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button:hover, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:hover {
-      background-color: rgba(67, 67, 74, 0.95);
-      color: white; }
-    window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button:active, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:active, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button:checked, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:checked {
-      background-color: #C72E2E;
-      color: white; }
-    window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.flat.small-button:disabled, window.background:not(.csd):not(.solid-csd) > grid.horizontal > grid.horizontal > button.small-button.sidebar-button:disabled {
-      color: alpha(#FFFFFF,0.6); }
-
-window.background:not(.solid-csd) > notebook:not(.frame) {
-  border: 0 none transparent;
-  background-color: #ffffff; }
-  window.background:not(.solid-csd) > notebook:not(.frame) > stack {
-    border: none;
-    box-shadow: none; }
 
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
