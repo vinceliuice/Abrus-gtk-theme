@@ -1779,49 +1779,50 @@ notebook {
 //    padding: 2px;
     background-color: $bg_color;
 
-    &.top {
-      border-bottom: 1px solid $selected_bg_color;
-      > tabs {
-        > tab {
-          margin: 6px 4px 0 4px;
-        }
-      }
-    }
-
-    &.bottom {
-      border-top: 1px solid $selected_bg_color;
-      > tabs {
-        > tab {
-          margin: 0 4px 6px 4px;
-        }
-      }
-    }
-
-    &.left {
-      border-right: 1px solid $selected_bg_color;
-      > tabs {
-        > tab {
-          margin: 4px 0 4px 6px;
-        }
-      }
-    }
-
-    &.right {
-      border-left: 1px solid $selected_bg_color;
-      > tabs {
-        > tab {
-          margin: 4px 6px 4px 0;
-         }
-       }
-     }
+//    &.top {
+//      border-bottom: 1px solid $selected_bg_color;
+//      > tabs {
+//        > tab {
+//          margin: 6px 4px 0 4px;
+//        }
+//      }
+//    }
+//
+//    &.bottom {
+//      border-top: 1px solid $selected_bg_color;
+//      > tabs {
+//        > tab {
+//          margin: 0 4px 6px 4px;
+//        }
+//      }
+//    }
+//
+//    &.left {
+//      border-right: 1px solid $selected_bg_color;
+//      > tabs {
+//        > tab {
+//          margin: 4px 0 4px 6px;
+//        }
+//      }
+//    }
+//
+//    &.right {
+//      border-left: 1px solid $selected_bg_color;
+//      > tabs {
+//        > tab {
+//          margin: 4px 6px 4px 0;
+//         }
+//       }
+//     }
 
   @each $_pos, $_bpos in (top, bottom), (bottom, top), (right, left), (left, right) {
       // sizing and borders
       &.#{$_pos} {
+        padding: 2px;
         padding-#{$_bpos}: 0;
-//        margin-#{$_pos}: 2px;
+        border-#{$_bpos}: 1px solid $selected_bg_color;
         > tabs > tab {
-          padding: 2px 12px 4px 12px;
+          padding: 0 12px 2px 12px;
           min-width: 16px;
           min-height: 16px;
 
@@ -1831,8 +1832,8 @@ notebook {
 
           // tab overlap
           + tab {
-            @if $_pos==top or $_pos==bottom { margin-left: 0; }
-            @else { margin-top: 0; }
+            @if $_pos==top or $_pos==bottom { margin-left: 2px; }
+            @else { margin-top: 2px; }
           }
 
           // tab border radius

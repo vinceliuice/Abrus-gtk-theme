@@ -1619,65 +1619,57 @@ notebook {
   notebook > header {
     background-color: #F5F6F7; }
     notebook > header.top {
+      padding: 2px;
+      padding-bottom: 0;
       border-bottom: 1px solid #C72E2E; }
       notebook > header.top > tabs > tab {
-        margin: 6px 4px 0 4px; }
-    notebook > header.bottom {
-      border-top: 1px solid #C72E2E; }
-      notebook > header.bottom > tabs > tab {
-        margin: 0 4px 6px 4px; }
-    notebook > header.left {
-      border-right: 1px solid #C72E2E; }
-      notebook > header.left > tabs > tab {
-        margin: 4px 0 4px 6px; }
-    notebook > header.right {
-      border-left: 1px solid #C72E2E; }
-      notebook > header.right > tabs > tab {
-        margin: 4px 6px 4px 0; }
-    notebook > header.top {
-      padding-bottom: 0; }
-      notebook > header.top > tabs > tab {
-        padding: 2px 12px 4px 12px;
+        padding: 0 12px 2px 12px;
         min-width: 16px;
         min-height: 16px;
         outline-offset: -4px;
         border-bottom: none;
         border-radius: 0; }
         notebook > header.top > tabs > tab + tab {
-          margin-left: 0; }
+          margin-left: 2px; }
     notebook > header.bottom {
-      padding-top: 0; }
+      padding: 2px;
+      padding-top: 0;
+      border-top: 1px solid #C72E2E; }
       notebook > header.bottom > tabs > tab {
-        padding: 2px 12px 4px 12px;
+        padding: 0 12px 2px 12px;
         min-width: 16px;
         min-height: 16px;
         outline-offset: -4px;
         border-top: none;
         border-radius: 0; }
         notebook > header.bottom > tabs > tab + tab {
-          margin-left: 0; }
+          margin-left: 2px; }
     notebook > header.right {
-      padding-left: 0; }
+      padding: 2px;
+      padding-left: 0;
+      border-left: 1px solid #C72E2E; }
       notebook > header.right > tabs > tab {
-        padding: 2px 12px 4px 12px;
+        padding: 0 12px 2px 12px;
         min-width: 16px;
         min-height: 16px;
         outline-offset: -4px;
         border-left: none;
         border-radius: 0; }
         notebook > header.right > tabs > tab + tab {
-          margin-top: 0; }
+          margin-top: 2px; }
     notebook > header.left {
-      padding-right: 0; }
+      padding: 2px;
+      padding-right: 0;
+      border-right: 1px solid #C72E2E; }
       notebook > header.left > tabs > tab {
-        padding: 2px 12px 4px 12px;
+        padding: 0 12px 2px 12px;
         min-width: 16px;
         min-height: 16px;
         outline-offset: -4px;
         border-right: none;
         border-radius: 0; }
         notebook > header.left > tabs > tab + tab {
-          margin-top: 0; }
+          margin-top: 2px; }
     notebook > header.top > tabs > arrow.up, notebook > header.bottom > tabs > arrow.up {
       -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
       notebook > header.top > tabs > arrow.up:last-child, notebook > header.bottom > tabs > arrow.up:last-child {
