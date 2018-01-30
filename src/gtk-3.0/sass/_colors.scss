@@ -59,7 +59,7 @@ $dark_sidebar_fg: $text_color;
 $dark_sidebar_border: if($variant == 'light', $dark_sidebar_bg, lighten($dark_sidebar_bg, 5%));
 
 $osd_fg_color: $text_color;
-$osd_bg_color: if($variant=='light', transparentize(#e2e2e2, 0.05), transparentize(#222225, 0.05));
+$osd_bg_color: if($variant=='light', transparentize(#fefefe, 0.1), transparentize(#222225, 0.1));
 
 $osd_button_bg: transparentize(lighten($osd_bg_color, 22%), 0.6);
 $osd_button_border: transparentize(darken($osd_bg_color, 12%), 0.6);

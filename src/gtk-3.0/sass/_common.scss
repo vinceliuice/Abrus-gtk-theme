@@ -972,8 +972,8 @@ searchbar {
   background-color: $bg_color;
   border-style: solid;
   border-color: $borders_color;
-  border-width: 0 0 1px;
-  padding: 3px;
+  border-width: 0 0 1px 0;
+  padding: 2px;
 }
 
 actionbar {
@@ -1779,42 +1779,6 @@ notebook {
 //    padding: 2px;
     background-color: $bg_color;
 
-//    &.top {
-//      border-bottom: 1px solid $selected_bg_color;
-//      > tabs {
-//        > tab {
-//          margin: 6px 4px 0 4px;
-//        }
-//      }
-//    }
-//
-//    &.bottom {
-//      border-top: 1px solid $selected_bg_color;
-//      > tabs {
-//        > tab {
-//          margin: 0 4px 6px 4px;
-//        }
-//      }
-//    }
-//
-//    &.left {
-//      border-right: 1px solid $selected_bg_color;
-//      > tabs {
-//        > tab {
-//          margin: 4px 0 4px 6px;
-//        }
-//      }
-//    }
-//
-//    &.right {
-//      border-left: 1px solid $selected_bg_color;
-//      > tabs {
-//        > tab {
-//          margin: 4px 6px 4px 0;
-//         }
-//       }
-//     }
-
   @each $_pos, $_bpos in (top, bottom), (bottom, top), (right, left), (left, right) {
       // sizing and borders
       &.#{$_pos} {
@@ -1825,19 +1789,12 @@ notebook {
           padding: 0 12px 2px 12px;
           min-width: 16px;
           min-height: 16px;
-
           outline-offset: -4px;
 
           border-#{$_bpos}: none;
 
           @if $_pos==top or $_pos==bottom { margin-right: 2px; }
           @else { margin-bottom: 2px; }
-
-          // tab overlap
-//          + tab {
-//            @if $_pos==top or $_pos==bottom { margin-left: 2px; }
-//            @else { margin-top: 2px; }
-//          }
 
           // tab border radius
           @if $_pos==top { border-radius: 0; }
@@ -1892,23 +1849,21 @@ notebook {
 
       // close button
       button.flat {
-        border-radius: 100px;
-        min-height: 16px;
-        min-width: 24px;
+        min-height: 0;
+        min-width: 0;
         padding: 0;
-        margin-right: -6px;
-        margin-bottom: -2px;
+        margin: 0;
         color: if($variant=='light', gtkalpha(black, 0.35), gtkalpha(white, 0.6));
 
         &:hover {
           @extend %undecorated_button;
-          color: $selected_fg_color;
-          background-color: lighten($selected_bg_color, 18%);
+          color: if($variant=='light', gtkalpha(black, 0.6), gtkalpha(white, 0.85));
+          background-color: transparent;
         }
         &:active, &:active:hover {
+          color: if($variant=='light', gtkalpha(black, 0.35), gtkalpha(white, 0.6));
           @extend %undecorated_button;
-          color: $selected_fg_color;
-          background-color: lighten($selected_bg_color, 12%);
+          background-color: transparent;
         }
       }
     }
@@ -3129,7 +3084,7 @@ decoration {
               0 8px 8px 0 if($variant == 'light', opacify($_wm_border, 0.1), opacify($_wm_border, 0.05));
 
   // this is used for the resize cursor area
-  margin: 6px;
+  margin: 4px;
 
   &:backdrop {
     // the transparent shadow here is to enforce that the shadow extents don't
@@ -3149,8 +3104,9 @@ decoration {
   }
   // server-side decorations as used by mutter
   .ssd & {
+    margin: -3px;
     border-radius: if($darker=='false' and $variant=='light', 4px 4px 0 0, 3px 3px 0 0);
-//    box-shadow: 0 0 0 0 if($darker=='true' or $variant == 'dark', transparentize(black, 0.35), $_wm_border);
+    box-shadow: 0 0 3px 0 if($variant == 'light', opacify($_wm_border, 0.06), opacify($_wm_border, 0.03));
 
     &.maximized { border-radius: 0; }
   }
