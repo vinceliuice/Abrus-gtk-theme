@@ -77,8 +77,6 @@ popover.background label.separator {
 label selection {
   color: #ffffff;
   background-color: #B82525; }
-label:disabled {
-  color: rgba(222, 222, 222, 0.45); }
 
 .dim-label, label.separator, popover label.separator,
 popover.background label.separator, headerbar .subtitle,
@@ -1481,9 +1479,6 @@ menubar,
     menubar > menuitem:disabled,
     .menubar > menuitem:disabled {
       color: rgba(225, 219, 219, 0.2); }
-    menubar > menuitem label:disabled,
-    .menubar > menuitem label:disabled {
-      color: rgba(225, 219, 219, 0.2); }
 
 menu,
 .menu {
@@ -2062,6 +2057,10 @@ infobar radio:checked:disabled {
 checkbutton.text-button, radiobutton.text-button {
   padding: 2px 0;
   outline-offset: 0; }
+  checkbutton.text-button:hover, radiobutton.text-button:hover {
+    color: #b8b8b8; }
+  checkbutton.text-button:disabled, radiobutton.text-button:disabled {
+    color: rgba(222, 222, 222, 0.45); }
 checkbutton label:not(:only-child):first-child, radiobutton label:not(:only-child):first-child {
   margin-left: 4px; }
 checkbutton label:not(:only-child):last-child, radiobutton label:not(:only-child):last-child {
