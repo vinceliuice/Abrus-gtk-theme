@@ -2906,7 +2906,8 @@ textview text selection, flowbox flowboxchild:selected, entry selection:focus, e
 modelbutton.flat:active,
 modelbutton.flat:active arrow,
 modelbutton.flat:selected,
-modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected {
+modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, #MozillaGtkWidget.background > widget > scrolledwindow > textview text:selected, #MozillaGtkWidget.background > widget > scrolledwindow > textview text:selected:focus,
+#MozillaGtkWidget.background > widget > scrolledwindow > textview text selection {
   background-color: #B82525; }
   row:selected label, label:selected, .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
   .view text:selected,
@@ -2920,7 +2921,8 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   modelbutton.flat:active,
   modelbutton.flat:active arrow,
   modelbutton.flat:selected,
-  modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected {
+  modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, #MozillaGtkWidget.background > widget > scrolledwindow > textview text:selected, #MozillaGtkWidget.background > widget > scrolledwindow > textview text:selected:focus,
+  #MozillaGtkWidget.background > widget > scrolledwindow > textview text selection {
     color: #ffffff; }
     row:selected label:disabled, label:disabled:selected, .view:disabled:selected, iconview:disabled:selected, iconview:disabled:selected:focus,
     .view text:disabled:selected,
@@ -2932,7 +2934,8 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     modelbutton.flat:disabled:active,
     modelbutton.flat:active arrow:disabled,
     modelbutton.flat:disabled:selected,
-    modelbutton.flat:selected arrow:disabled, treeview.view:disabled:selected:focus, row:disabled:selected, calendar:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected {
+    modelbutton.flat:selected arrow:disabled, treeview.view:disabled:selected:focus, row:disabled:selected, calendar:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, #MozillaGtkWidget.background > widget > scrolledwindow > textview text:disabled:selected,
+    #MozillaGtkWidget.background > widget > scrolledwindow > textview text selection:disabled {
       color: #dc9292; }
 
 /*********
@@ -3451,6 +3454,74 @@ gf-candidate-box:hover, gf-candidate-box:selected {
   color: #ffffff;
   background-color: #B82525;
   border-radius: 2px; }
+
+window.background:not(.csd) > widget > separator {
+  color: #24272d; }
+window.background:not(.csd) > widget > scrollbar {
+  background-clip: border-box; }
+window.background:not(.csd) > widget > scrollbar,
+window.background:not(.csd) > widget > frame > border {
+  border-color: rgba(0, 0, 0, 0.2); }
+window.background:not(.csd) > widget > entry,
+window.background:not(.csd) > widget > button > button {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px; }
+window.background:not(.csd) > widget > entry {
+  border-radius: 2px;
+  background-image: image(#16181C);
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+  window.background:not(.csd) > widget > entry:focus {
+    border-color: #B82525; }
+window.background:not(.csd) > widget > spinbutton {
+  background-image: image(#1a1d22);
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+  window.background:not(.csd) > widget > spinbutton:active {
+    background-image: image(#B82525); }
+window.background:not(.csd) > menu > separator {
+  color: #24272d; }
+window.background:not(.csd) > menu > menuitem > label:disabled {
+  color: rgba(222, 222, 222, 0.45); }
+
+#MozillaGtkWidget.background {
+  background-color: #191B1F; }
+  #MozillaGtkWidget.background .background,
+  #MozillaGtkWidget.background frame,
+  #MozillaGtkWidget.background separator,
+  #MozillaGtkWidget.background scrolledwindow {
+    background-color: #191B1F; }
+  #MozillaGtkWidget.background scrollbar {
+    background-color: #3b4049; }
+    #MozillaGtkWidget.background scrollbar slider {
+      background-color: #727375; }
+      #MozillaGtkWidget.background scrollbar slider:hover {
+        background-color: #8f9092; }
+      #MozillaGtkWidget.background scrollbar slider:hover:active {
+        background-color: #adadae; }
+      #MozillaGtkWidget.background scrollbar slider:disabled {
+        background-color: transparent; }
+  #MozillaGtkWidget.background *:not(menuitem):hover, #MozillaGtkWidget.background *:not(menuitem):hover button,
+  #MozillaGtkWidget.background *:focus,
+  #MozillaGtkWidget.background *:focus button,
+  #MozillaGtkWidget.background *:active,
+  #MozillaGtkWidget.background *:active button,
+  #MozillaGtkWidget.background *:checked,
+  #MozillaGtkWidget.background *:checked button {
+    color: #dedede; }
+  #MozillaGtkWidget.background > window.background > menu {
+    background-color: #16181C; }
+    #MozillaGtkWidget.background > window.background > menu > separator {
+      padding: 0;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.2); }
+  #MozillaGtkWidget.background > widget border {
+    border-color: rgba(0, 0, 0, 0.2); }
+  #MozillaGtkWidget.background > widget separator {
+    background-color: rgba(0, 0, 0, 0.2); }
+  #MozillaGtkWidget.background > widget > scrolledwindow > textview {
+    background-color: #3b4049; }
+    #MozillaGtkWidget.background > widget > scrolledwindow > textview text {
+      background-color: transparent;
+      color: #fdfdfd; }
 
 /****************
  * Libre-Office *
